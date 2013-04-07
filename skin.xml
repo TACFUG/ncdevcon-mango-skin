@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin id="bootstrap" name="bootstrap" version="1.0" provider-name="AJDyka" lastModified="2011-02-28">
+	<description>Bootstrap theme for Mango Blog</description>
+	<url></url>
+	<author>Jim Priest</author>
+	<authorUrl>http://www.thecrumb.com.com</authorUrl>
+	<designAuthor>Jim Priest</designAuthor>
+	<designAuthorUrl>http://www.thecrumb.com</designAuthorUrl>
+	<thumbnail>img/Bootstrap-from-Twitter.jpg</thumbnail>
+	<preview>img/Bootstrap-from-Twitter.jpg</preview>
+	<requiresVersion match="greaterOrEqual">1.6</requiresVersion>
+	<adminEditorCss>assets/css/adminEditor.css</adminEditorCss>
+	<license>Creative Commons Attribution-ShareAlike 2.5</license>
+	<pageTemplates>
+	</pageTemplates>
+	<adminPageTemplates>
+		<template id="login" file="login.cfm" />
+	</adminPageTemplates>
+	<podLocations>
+		<location id="sidebar" name="General sidebar">
+			<!-- template pods defined in the skin -->
+			<pod id="blog-description">Blog Description</pod>
+			<pod id="posts">Recent Entries</pod>
+			<pod id="categories">Categories</pod>
+			<pod id="search">Search</pod>
+			<pod id="category-cloud">Tag Cloud</pod>
+			<pod id="monthly-archives">Archives (monthly)</pod>
+			<pod id="links-by-category">Links by category</pod>
+		</location>
+		<location id="sidebar-page" name="Page Sidebar">
+			<pod id="page-menu">Page Navigation</pod>
+			<pod id="posts">Recent Entries</pod>
+			<pod id="categories">Categories</pod>
+			<pod id="search">Search</pod>
+			<pod id="category-cloud">Tag Cloud</pod>
+			<pod id="monthly-archives">Archives (monthly)</pod>
+			<pod id="links-by-category">Links by category</pod>
+		</location>
+		<location id="sidebar-archives" name="Archives Sidebar">
+			<pod id="posts">Recent Entries</pod>
+			<pod id="categories">Categories</pod>
+			<pod id="search">Search</pod>
+			<pod id="category-cloud">Tag Cloud</pod>
+			<pod id="monthly-archives">Archives (monthly)</pod>
+			<pod id="links-by-category">Links by category</pod>
+		</location>
+	</podLocations>
+</skin>
