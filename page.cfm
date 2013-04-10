@@ -153,7 +153,7 @@
 		<!--- Footer --->
 		<div class="grid_12">
 			<mangox:PodGroup locationId="footer" template="index">
-				<template:footer />
+				<template:pagefooter />
 	        </mangox:PodGroup>
 		</div>
 		<div class="clear"></div>

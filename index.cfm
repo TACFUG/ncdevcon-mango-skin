@@ -3,79 +3,13 @@
 <cfimport prefix="template" taglib=".">
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title><mango:Blog title /> &#8212; <mango:Blog tagline /></title>
-
-	<meta http-equiv="Content-Type" content="text/html; charset=<mango:Blog charset />" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="generator" content="Mango <mango:Blog version />" />
-	<meta name="description" content="<mango:Blog description />" />
-	<meta name="robots" content="index, follow" />
-
-	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<mango:Blog rssurl />" />
-	<link rel="alternate" type="application/atom+xml" title="Atom" href="<mango:Blog atomurl />" />
-	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="<mango:Blog apiurl />" />
-
-	<link rel="stylesheet" href="<mango:Blog skinurl />assets/css/bootstrap.min.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="<mango:Blog skinurl />assets/css/bootstrap-responsive.min.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="<mango:Blog skinurl />assets/css/font-awesome.min.css">
-	<!--[if IE 7]>
-	<link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
-	<![endif]-->
-	<link rel="stylesheet" type="text/css" href="<mango:Blog skinurl />assets/css/main.css"  media="all" />
-	<link rel="stylesheet" type="text/css" href="<mango:Blog skinurl />assets/css/custom.css"  media="all" />
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<mango:Event name="beforeHtmlHeadEnd" />
-</head>
+<template:header/>
 <body>
 	<mango:Event name="beforeHtmlBodyStart" />
-		<div class="navbar navbar-static-top"> <!--- navbar-inverse --->
-			<div class="navbar-inner">
-				<div class="container">
-					<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<div class="nav-collapse collapse">
-						<ul class="nav pull-right">
-							<li><a href="#" title="Frequently Asked Questions"><i class="icon-question-sign"></i>  FAQ</a></li>
-							<li><a href="#about" title="NCDevCon Code of Conduct"><i class="icon-check"></i> Code Of Conduct</a></li>
-							<li><a href="#contact" title="Contact NCDevCon"><i class="icon-envelope"></i> Contact</a></li>
-							<li><a href=""><i class="icon-twitter"></i> Twitter</a></li>
-							<li><a href=""><i class="icon-rss"></i> RSS</a></li>
-						</ul>
-					</div><!--/.nav-collapse -->
-				</div>
-			</div>
-		</div>
-		<!--- main pages nav --->
-		<div class="container">
-			<div class="masthead">
-				<h1><a href="<mango:Blog url />"><mango:Blog title /></a></h1>
-					<h3><mango:Blog tagline /></h3>
-				<div class="navbar">
-					<div class="navbar-inner">
-						<div class="container">
-							<ul class="nav">
-								<li>
-									<a class="active" href="<mango:Blog basePath />" title="Home">Home</a>
-								</li>
-								<mango:Pages>
-									<mango:Page>
-										<li>
-											<a href="<mango:PageProperty link>" title="<mango:PageProperty title />"><mango:PageProperty title /></a>
-										</li>
-									</mango:Page>
-								</mango:Pages>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<!-- /.navbar -->
-			</div>
+		<!--- global page header / nav --->
+		<template:headernav/>
 
+			<div class="container">
 			<!-- main content -->
 			<div class="row-fluid">
 				<div class="span8">
@@ -127,24 +61,10 @@
 					</ul>
 				</div>
 			</div>
-			<hr>
-			<div class="footer">
-
-
-				<!--- Recent Posts, Recent Comments, About
-				<mangox:PodGroup locationId="footer" template="index">
-					<template:footer />
-				</mangox:PodGroup> --->
-
-				<mango:Event name="afterFooterStart" />
-				&copy; <cfoutput>#Year(now())#</cfoutput> <mango:Blog title /> &mdash; <a href="http://www.mangoblog.org" title="Mango Blog - A free ColdFusion blog engine">Powered by Mango Blog</a>
-				<mango:Event name="beforeFooterEnd" />
-			</div>
-		</div>
-		<!-- /container -->
-		<div class="container">
 		</div>
 
-	<mango:Event name="beforeHtmlBodyEnd" />
-</body>
+		<template:footer/>
+
+		<mango:Event name="beforeHtmlBodyEnd" />
+	</body>
 </html>
