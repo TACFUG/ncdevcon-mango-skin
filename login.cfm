@@ -10,23 +10,23 @@
 		<!--- global page header / nav --->
 		<template:headernav/>
 
+		<!-- main content -->
 		<div class="container">
-			<!-- main content -->
 			<div class="row-fluid">
-					<h1>Login</h1>
+					<h2>Login</h2>
 					<mango:RequestVar ifExists="errormsg">
 						<p><span class="label label-important"><mango:RequestVar name="errormsg" /></span></p>
 					</mango:RequestVar>
 
 					<cfoutput>
-					<form action="<mangox:Environment selfUrl />" method="post" id="login_form" class="form-inline">
-						<input name="username" id="username" value="" type="text" class="input-medium" placeholder="Username">
-					  <input name="password" id="password" value="" type="password" class="input-medium" placeholder="Password">
-					  <button type="submit" name="login" value"Login" class="btn">Login</button>
-					</form>
+						<form action="<mangox:Environment selfUrl />" method="post" id="login_form" class="form-inline">
+							<input name="username" id="username" value="" type="text" class="input-medium" placeholder="Username">
+						  <input name="password" id="password" value="" type="password" class="input-medium" placeholder="Password">
+						  <button type="submit" name="login" value"Login" class="btn">Login</button>
+						</form>
 					</cfoutput>
-			</div><!--// main content -->
-		</div><!-- // container -->
+			</div> <!-- // row -->
+		</div><!--// main content -->
 
 		<template:footer/>
 
