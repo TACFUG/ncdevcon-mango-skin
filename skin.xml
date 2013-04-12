@@ -6,10 +6,12 @@
 	<authorUrl>http://www.thecrumb.com.com</authorUrl>
 	<designAuthor>Jim Priest</designAuthor>
 	<designAuthorUrl>http://www.thecrumb.com</designAuthorUrl>
+
 	<thumbnail>img/Bootstrap-from-Twitter.jpg</thumbnail>
 	<preview>img/Bootstrap-from-Twitter.jpg</preview>
+
 	<requiresVersion match="greaterOrEqual">1.6</requiresVersion>
-	<adminEditorCss>assets/css/adminEditor.css</adminEditorCss>
+	<adminEditorCss></adminEditorCss>
 	<license>Creative Commons Attribution-ShareAlike 2.5</license>
 	<pageTemplates>
 	</pageTemplates>

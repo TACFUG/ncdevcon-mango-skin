@@ -36,21 +36,20 @@
 		 						<i class="icon-tags"></i> <mango:Categories><mango:Category><a href="<mango:CategoryProperty link />" title="View all posts in <mango:CategoryProperty title />" rel="category tag"><mango:CategoryProperty title /></a><mango:Category ifCurrentIsNotLast>, </mango:Category></mango:Category></mango:Categories>
 		 					</span>
 						</p>
-						<div class="clear"></div>
 						</mango:Post>
 					</mango:Posts>
 
-					<!--- Previous / Next buttons --->
+					<!-- Previous / Next buttons -->
 					<mango:Archive pageSize="2">
-						<hr>
 						<div class="page-navigation">
 							<div class="previous"><mango:ArchiveProperty ifHasNextPage><a class="previous" href="<mango:ArchiveProperty link pageDifference="1" />"><i class="icon-chevron-left"></i> Previous Entries</a></mango:ArchiveProperty></div>
 							<div class="next"></div>
-					</div>
+						</div>
 					</mango:Archive>
 				</div>
+
+				<!-- sidebar -->
 				<div class="span4">
-					<!--- sidebar --->
 					<ul class="sidebar_list">
 						<mangox:PodGroup locationId="sidebar" template="index">
 							<mangox:TemplatePod id="blog-description" title="WTF">
@@ -60,6 +59,7 @@
 						</mangox:PodGroup>
 					</ul>
 				</div>
+
 			</div>
 		</div>
 
