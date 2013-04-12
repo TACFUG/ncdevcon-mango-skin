@@ -29,8 +29,13 @@
 		<!--- main pages nav --->
 		<div class="container">
 			<div class="masthead">
-				<h1><a href="<mango:Blog url />"><mango:Blog title /></a></h1>
-					<h3><mango:Blog tagline /></h3>
+				<div class="logo">
+					<img src="<mango:Blog skinurl />assets/img/ncdevcon-logo.png" align="left">
+						<div class="title">
+							<h1><a href="<mango:Blog url />"><mango:Blog title /></a></h1>
+							<span class="tagline"><mango:Blog tagline /></span>
+						</div>
+				</div>
 				<div class="navbar">
 					<div class="navbar-inner">
 						<div class="container">
@@ -48,10 +53,9 @@
 							</ul>
 						</div>
 					</div>
-				</div>
-				<!-- /.navbar -->
-			</div>
-		</div>
+				</div><!-- // navbar -->
+			</div><!-- // masthead -->
+		</div> <!-- // container -->
 	</header>
 </cfif>
 

@@ -11,13 +11,19 @@
 	<preview>img/Bootstrap-from-Twitter.jpg</preview>
 
 	<requiresVersion match="greaterOrEqual">1.6</requiresVersion>
+
 	<adminEditorCss></adminEditorCss>
+
 	<license>Creative Commons Attribution-ShareAlike 2.5</license>
+
 	<pageTemplates>
+		<template file="archives_index.cfm" name="Archives Listing Page" />
 	</pageTemplates>
+
 	<adminPageTemplates>
 		<template id="login" file="login.cfm" />
 	</adminPageTemplates>
+
 	<podLocations>
 		<location id="sidebar" name="General sidebar">
 			<!-- template pods defined in the skin -->
