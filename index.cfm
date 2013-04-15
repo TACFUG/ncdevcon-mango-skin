@@ -15,6 +15,7 @@
 				<div class="span8">
 					<mango:Posts count="2">
 						<mango:Post>
+						<!--- entry --->
 						<h2><a href="<mango:PostProperty link />" rel="bookmark" title="Permanent Link to <mango:PostProperty title />"><mango:PostProperty title /></a></h2>
 						<p class="post-date"><mango:PostProperty date dateformat="mmmm dd, yyyy" /></p>
 						<div class="entry">
@@ -36,6 +37,7 @@
 		 						<i class="icon-tags"></i> <mango:Categories><mango:Category><a href="<mango:CategoryProperty link />" title="View all posts in <mango:CategoryProperty title />" rel="category tag"><mango:CategoryProperty title /></a><mango:Category ifCurrentIsNotLast>, </mango:Category></mango:Category></mango:Categories>
 		 					</span>
 						</p>
+						<!--- // entry --->
 						</mango:Post>
 					</mango:Posts>
 

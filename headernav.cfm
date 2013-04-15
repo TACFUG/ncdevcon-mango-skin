@@ -14,17 +14,31 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
+
 					<div class="nav-collapse collapse">
-						<ul class="nav pull-right">
-							<li><a href="#" title="Frequently Asked Questions"><i class="icon-question-sign"></i>  FAQ</a></li>
-							<li><a href="#about" title="NCDevCon Code of Conduct"><i class="icon-check"></i> Code Of Conduct</a></li>
-							<li><a href="#contact" title="Contact NCDevCon"><i class="icon-envelope"></i> Contact</a></li>
-							<li><a href=""><i class="icon-twitter"></i> Twitter</a></li>
-							<li><a href=""><i class="icon-rss"></i> RSS</a></li>
-						</ul>
-					</div><!--/.nav-collapse -->
-				</div>
-			</div>
+							<ul class="nav pull-right">
+								<mango:Pages>
+									<mango:Page>
+										<mango:PageProperty ifHasCustomField="topnav">
+											<li><a href="<mango:PageProperty link/>" title="<mango:PageProperty title />"><i class="icon-<mango:PageProperty customField='topnav' />"></i> <mango:PageProperty title /></a></li>
+										</mango:pageProperty>
+									</mango:Page>
+								</mango:Pages>
+
+								<!--- social media icons --->
+								<li><a class="dropdown-toggle" data-toggle="dropdown" href="#" title="Keep up with NCDevCon"><i class="icon-comments-alt"></i> Social <b class="caret"></b></a>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+										<li><a href="" title="Find NCDevCon on Twitter"><i class="icon-twitter"></i> Twitter</a></li>
+										<li><a href="" title="Find NCDevCon on Facebook"><i class="icon-facebook"></i> Facebook</a></li>
+										<li><a href="" title="Share your NCDevCon photos on Flikr"><i class="icon-camera"></i> Flickr</a></li>
+										<li><a href="" title="Follow NCDevCon via RSS"><i class="icon-rss"></i> RSS</a></li>
+									</ul>
+								</li>
+							</ul>
+
+					</div><!--//nav-collapse -->
+				</div><!-- // container -->
+			</div><!-- // navbar-inner -->
 		</div>
 		<!--- main pages nav --->
 		<div class="container">
@@ -43,11 +57,12 @@
 								<li>
 									<a class="active" href="<mango:Blog basePath />" title="Home">Home</a>
 								</li>
+
 								<mango:Pages>
 									<mango:Page>
-										<li>
-											<a href="<mango:PageProperty link>" title="<mango:PageProperty title />"><mango:PageProperty title /></a>
-										</li>
+										<mango:PageProperty ifHasCustomField="mainnav">
+											<li><a href="<mango:PageProperty link/>" title="<mango:PageProperty title />"><mango:PageProperty title /></a></li>
+										</mango:pageProperty>
 									</mango:Page>
 								</mango:Pages>
 							</ul>

@@ -26,11 +26,7 @@
 	<![endif]-->
 	<link rel="stylesheet" type="text/css" href="<mango:Blog skinurl />assets/css/main.css"  media="all" />
 	<link rel="stylesheet" type="text/css" href="<mango:Blog skinurl />assets/css/custom.css"  media="all" />
-
-	<!--- TODO: probably need to store these locally --->
 	<link href='http://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
 	<mango:Event name="beforeHtmlHeadEnd" />
 </head>
 </cfif>

@@ -8,3 +8,7 @@
 
 /*navigation*/
 .page-navigation {margin-top: 2em; border-top: 1px solid red;}
+
+/*post meta block with date, comments and tags*/
+.post-meta {font-size: small;}
+.meta-date {padding-right: 1em;}

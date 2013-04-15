@@ -14,6 +14,12 @@
 <mango:Event name="beforeFooterEnd" />
 </div>
 
+<!--- javascript --->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="<mango:Blog skinurl />assets/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.dropdown-toggle').dropdown()
+	});
+</script>
 </cfif>
-
-
