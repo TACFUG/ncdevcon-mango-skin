@@ -41,15 +41,19 @@
 			</div><!-- // navbar-inner -->
 		</div>
 		<!--- main pages nav --->
-		<div class="container">
-			<div class="masthead">
-				<div class="logo">
-					<img src="<mango:Blog skinurl />assets/img/ncdevcon-logo.png" align="left">
-						<div class="title">
-							<h1><a href="<mango:Blog url />"><mango:Blog title /></a></h1>
-							<span class="tagline"><mango:Blog tagline /></span>
-						</div>
-				</div>
+		<div class="container masthead">
+
+				<div class="row">
+					<div class="span6 logo">
+						<img src="<mango:Blog skinurl />assets/img/ncdevcon-logo.png" align="left">
+						<h1><a href="<mango:Blog url />"><mango:Blog title /></a></h1>
+						<span class="tagline"><mango:Blog tagline /></span>
+					</div>
+					<div class="datelocation text-right">
+						<span><mango:Blog description /></span>
+					</div>
+				</div> <!-- // row -->
+
 				<div class="navbar">
 					<div class="navbar-inner">
 						<div class="container">
@@ -69,7 +73,6 @@
 						</div>
 					</div>
 				</div><!-- // navbar -->
-			</div><!-- // masthead -->
 		</div> <!-- // container -->
 	</header>
 </cfif>

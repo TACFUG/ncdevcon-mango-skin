@@ -17,6 +17,7 @@
 	<license>Creative Commons Attribution-ShareAlike 2.5</license>
 
 	<pageTemplates>
+		<template file="home_index.cfm" name="Home Page" />
 		<template file="archives_index.cfm" name="Archives Listing Page" />
 	</pageTemplates>
 
