@@ -2,18 +2,22 @@
 <cfimport prefix="mangox" taglib="../../tags/mangoextras">
 <cfimport prefix="template" taglib=".">
 <cfif thisTag.executionMode EQ "start">
-
-	<div class="well well-large">
+<mangox:PodGroup locationId="sidebar">
+	<div id="sidebar" class="well">
+		<ul class="unstyled">
 		<!--- recent posts --->
 		<mangox:TemplatePod id="posts" title="Recent Entries">
 		<ul>
 			<mango:Posts count="5" source="recent">
-			<mango:Post>
-				<li><a href="<mango:PostProperty link />"><mango:PostProperty title /></a><span class="recent_date"><mango:PostProperty date dateformat="m.dd" /></span></li>
-			</mango:Post>
+				<mango:Post>
+					<li> <a href="<mango:PostProperty link />" title="<mango:PostProperty title /> &bull; posted on <mango:PostProperty date dateformat='m/dd/yy' />"><mango:PostProperty title /></a></li>
+				</mango:Post>
 			</mango:Posts>
-			<mango:Archive pageSize="5"><mango:ArchiveProperty ifHasNextPage>
-			<li><a href="<mango:ArchiveProperty link />" title="Visit the archives!">Visit the archives for more!</a></li></mango:ArchiveProperty></mango:Archive>
+			<mango:Archive pageSize="5">
+				<mango:ArchiveProperty ifHasNextPage>
+					<li><a href="<mango:ArchiveProperty link />" title="Visit the archives!">Visit the archives for more!</a></li>
+				</mango:ArchiveProperty>
+			</mango:Archive>
 		</ul>
 		</mangox:TemplatePod>
 
@@ -83,5 +87,7 @@
 				</mangox:PodProperty>
 			</mangox:Pod>
 		</mangox:Pods>
+		</ul>
 	</div> <!-- // well -->
+</mangox:PodGroup>
 </cfif>

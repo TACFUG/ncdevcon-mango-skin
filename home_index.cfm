@@ -30,7 +30,7 @@
 								<div class="container">
 									<div class="carousel-caption">
 										<h4>Sponsor</h4>
-										<p>Sponsoring NCDevCon is a great way to reach technical developers in the heart of the Research Triangle Park, home to IBM, Cisco, Lenovo, SAS, RTI, EPA, GE, RedHat, Quintiles, Qualcomm, Cree and other leading companies. <span class="label">Learn More</span></p>
+										<p>Sponsoring NCDevCon is a great way to reach developers in the heart of the Research Triangle Park, home to IBM, Cisco, Lenovo, SAS, RTI, EPA, RedHat, Quintiles, Qualcomm, Cree and other leading companies. <span class="label">Learn More</span></p>
 									</div>
 								</div>
 							</div>
@@ -39,17 +39,8 @@
 						<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
 					</div><!-- // carousel -->
 
-
-
-
-		<!-- Marketing messaging and featurettes
-		================================================== -->
-		<!-- Wrap the rest of the page in another container to center all the content. -->
-
 		<div class="container marketing">
 			<div class="row-fluid">
-
-
 				<div class="span4">
 					<img class="img-circle" data-src="holder.js/140x140">
 					<h3>About</h3>
@@ -70,7 +61,7 @@
 					<!-- Begin MailChimp Signup Form -->
 					<div>
 						<form action="http://ncdevcon.us5.list-manage.com/subscribe/post?u=decde6098798f0901110dc72f&amp;id=f935cd82a9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline" target="_blank" novalidate>
-							<input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="email address" required>
+							<input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Email address" required>
 							<button type="submit" class="btn">Join</button>
 						</form>
 					</div><!-- // End mc_embed_signup-->

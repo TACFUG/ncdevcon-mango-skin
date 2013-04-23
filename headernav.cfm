@@ -16,7 +16,8 @@
 					</button>
 
 					<div class="nav-collapse collapse">
-							<ul class="nav pull-right">
+						<div class="pull-right">
+							<ul class="nav">
 								<mango:Pages>
 									<mango:Page>
 										<mango:PageProperty ifHasCustomField="topnav">
@@ -36,20 +37,27 @@
 								</li>
 							</ul>
 
+							<form name="searchForm" id="search_form" class="navbar-form pull-right" method="get" action="<mango:Blog searchUrl />">
+								<input type="text" class="input-medium" placeholder="Search" name="term" value="" id="term" />
+								<input type="hidden" id="searchsubmit" value="Search" />
+							</form>
+					</div>
+
 					</div><!--//nav-collapse -->
 				</div><!-- // container -->
 			</div><!-- // navbar-inner -->
 		</div>
 		<!--- main pages nav --->
 		<div class="container masthead">
-
-				<div class="row">
+				<div class="row-fluid">
 					<div class="span6 logo">
 						<img src="<mango:Blog skinurl />assets/img/ncdevcon-logo.png" align="left">
-						<h1><a href="<mango:Blog url />"><mango:Blog title /></a></h1>
-						<span class="tagline"><mango:Blog tagline /></span>
+						<div class="logobox">
+							<h1><a href="<mango:Blog url />"><mango:Blog title /></a></h1>
+							<span class="tagline"><mango:Blog tagline /></span>
+						</div>
 					</div>
-					<div class="datelocation text-right">
+					<div class="span6 datelocation text-right">
 						<span><mango:Blog description /></span>
 					</div>
 				</div> <!-- // row -->
