@@ -62,7 +62,7 @@
 					</div>
 				</div> <!-- // row -->
 
-				<div class="navbar">
+				<div class="navbar navbar-inverse">
 					<div class="navbar-inner">
 						<div class="container">
 							<ul class="nav">

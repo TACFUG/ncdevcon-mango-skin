@@ -17,23 +17,44 @@
 					<div id="myCarousel" class="carousel slide">
 						<div class="carousel-inner">
 							<div class="item active">
-								<img src="<mango:Blog skinurl />assets/img/slide-01.jpg" alt="">
+								<img src="<mango:Blog skinurl />assets/img/slide-1.jpg" alt="Content">
 								<div class="container">
 									<div class="carousel-caption">
-										<h4>Location</h4>
-										<p>NCDevCon is held at the College of Textiles located on the Centennial Campus of NC State University in Raleigh, North Carolina</p>
+										<h4>Content</h4>
+										<p>NCDevCon is a 250-300 attendee technical conference covering a wide variety of web development and design topics including Mobile and Web development, Javascript and HTML5</p>
 									</div>
 								</div>
-							</div>
-							 <div class="item">
-								 <img src="<mango:Blog skinurl />assets/img/slide-02.jpg" alt="">
+							</div><!-- // item -->
+
+							<div class="item">
+								<img src="<mango:Blog skinurl />assets/img/slide-2.jpg" alt="Photo by NCDOTcommunication on Flickr">
+								<div class="container">
+									<div class="carousel-caption">
+										<h4>Raleigh, North Carolina</h4>
+										<p>Businessweek selected Raleigh as its best place to live in the country. #1 Among Fastest-Growing Cities In The U.S. - Forbes, March 2013.  #5 Among America's New Tech Hot Spots - Forbes, January 2013.</p>
+									</div>
+								</div>
+							</div><!-- // item -->
+
+							<div class="item">
+								<img src="<mango:Blog skinurl />assets/img/slide-3.jpg" alt="Photo by NCDOTcommunication on Flickr">
+								<div class="container">
+									<div class="carousel-caption">
+										<h4>Venue</h4>
+										<p>NCDevCon is held at the College of Textiles located on the Centennial Campus of NC State University in Raleigh, North Carolina. Excellent wi-fi, classroom seating, nice outdoor areas and lots of room to network in the halls.</p>
+									</div>
+								</div>
+							</div><!-- // item -->
+
+							<div class="item">
+								<img src="<mango:Blog skinurl />assets/img/slide-4.jpg" alt="">
 								<div class="container">
 									<div class="carousel-caption">
 										<h4>Sponsor</h4>
 										<p>Sponsoring NCDevCon is a great way to reach developers in the heart of the Research Triangle Park, home to IBM, Cisco, Lenovo, SAS, RTI, EPA, RedHat, Quintiles, Qualcomm, Cree and other leading companies. <span class="label">Learn More</span></p>
 									</div>
 								</div>
-							</div>
+							</div><!-- // item -->
 						</div>
 						<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
 						<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
@@ -68,13 +89,6 @@
 
 				</div>
 			</div><!-- // row -->
-
-
-
-
-
-
-
 
 				</div>
 		</div>
