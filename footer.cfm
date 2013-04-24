@@ -9,7 +9,9 @@
 <hr>
 <div class="footer">
 <mango:Event name="afterFooterStart" />
-&copy; <cfoutput>#Year(now())#</cfoutput> <mango:Blog title /> &mdash; Powered by <a href="http://www.mangoblog.org" title="Mango Blog - A free ColdFusion blog engine">Mango Blog</a>, Twitter Bootstrap, ColdFusion
+&copy; <cfoutput>#Year(now())#</cfoutput> <mango:Blog title /> &mdash; Powered by <a href="http://www.mangoblog.org" title="Mango Blog - A free ColdFusion blog engine">Mango Blog</a>
+, <a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a>
+, <a href="http://www.adobe.com/products/coldfusion-family.html">ColdFusion</a>
 <mango:Event name="beforeFooterEnd" />
 </div>
 

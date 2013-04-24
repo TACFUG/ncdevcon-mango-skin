@@ -6,11 +6,7 @@
 <template:header robots="noindex,nofollow"/>
 <body>
 	<mango:Event name="beforeHtmlBodyStart" />
-
-		<!--- global page header / nav --->
 		<template:headernav/>
-
-		<!-- main content -->
 		<div class="container">
 			<div class="row-fluid">
 					<h2>Login</h2>
@@ -27,9 +23,7 @@
 					</cfoutput>
 			</div> <!-- // row -->
 		</div><!--// main content -->
-
 		<template:footer/>
-
 		<mango:Event name="beforeHtmlBodyEnd" />
 	</body>
 </html>

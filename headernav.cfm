@@ -28,11 +28,10 @@
 
 								<!--- social media icons --->
 								<li><a class="dropdown-toggle" data-toggle="dropdown" href="#" title="Keep up with NCDevCon"><i class="icon-comments-alt"></i> Social <b class="caret"></b></a>
-									<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-										<li><a href="" title="Find NCDevCon on Twitter"><i class="icon-twitter"></i> Twitter</a></li>
-										<li><a href="" title="Find NCDevCon on Facebook"><i class="icon-facebook"></i> Facebook</a></li>
-										<li><a href="" title="Share your NCDevCon photos on Flikr"><i class="icon-camera"></i> Flickr</a></li>
-										<li><a href="" title="Follow NCDevCon via RSS"><i class="icon-rss"></i> RSS</a></li>
+									<ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dLabel">
+										<li><a href="https://twitter.com/ncdevcon" title="Find NCDevCon on Twitter"><i class="icon-twitter"></i> Twitter</a></li>
+										<li><a href="https://www.facebook.com/NCDevCon" title="Find NCDevCon on Facebook"><i class="icon-facebook"></i> Facebook</a></li>
+										<li><a href="http://www.flickr.com/groups/ncdevcon" title="Share your NCDevCon photos on Flikr"><i class="icon-camera"></i> Flickr</a></li>
 									</ul>
 								</li>
 							</ul>
@@ -51,14 +50,18 @@
 		<div class="container masthead">
 				<div class="row-fluid">
 					<div class="span6 logo">
-						<img src="<mango:Blog skinurl />assets/img/ncdevcon-logo.png" align="left">
+						<a href="<mango:Blog url />" title="Home"><img src="<mango:Blog skinurl />assets/img/ncdevcon-logo.png" align="left"></a>
 						<div class="logobox">
-							<h1><a href="<mango:Blog url />"><mango:Blog title /></a></h1>
-							<span class="tagline"><mango:Blog tagline /></span>
+							<h1><mango:Blog title /></h1>
+							<span class="tagline">
+								<mango:Blog tagline />
+								<mango:Blog description />
+							</span>
 						</div>
 					</div>
 					<div class="span6 datelocation text-right">
-						<span><mango:Blog description /></span>
+						<div class="clear"></div>
+						<a href="http://www.eventbrite.com/event/6398007613?ref=ebtnebregn" title="Register for NCDevCon" target="_blank"><img src="http://www.eventbrite.com/custombutton?eid=6398007613" alt="Eventbrite - NCDevCon 2013 - North Carolina&#39;s Premier Web Conference" /></a>
 					</div>
 				</div> <!-- // row -->
 
@@ -84,6 +87,3 @@
 		</div> <!-- // container -->
 	</header>
 </cfif>
-
-
-

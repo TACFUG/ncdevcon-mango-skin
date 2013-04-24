@@ -6,24 +6,21 @@
 <template:header/>
 <body>
 <mango:Event name="beforeHtmlBodyStart" />
-	<!--- global page header / nav --->
 	<template:headernav/>
-
 		<!-- main content -->
 		<div class="container">
-
 			<div class="row-fluid">
 				<div class="span8">
-					<mango:Archive pageSize="2">
-						<mango:ArchiveProperty ifIsType="category"><h1>Entries Tagged as <mango:ArchiveProperty title /></h1></mango:ArchiveProperty>
+					<mango:Archive pageSize="10">
+						<mango:ArchiveProperty ifIsType="category"><h1>Entries tagged as <mango:ArchiveProperty title /></h1></mango:ArchiveProperty>
 						<mango:ArchiveProperty ifIsType="month"><h2>Entries for month: <mango:ArchiveProperty title dateformat="mmmm yyyy"  /></h2></mango:ArchiveProperty>
 						<mango:ArchiveProperty ifIsType="day"><h2>Entries for day: <mango:ArchiveProperty title dateformat="dd mmmm yyyy" /></h2></mango:ArchiveProperty>
 						<mango:ArchiveProperty ifIsType="year"><h2>Entries for year: <mango:ArchiveProperty title dateformat="yyyy" /></h2></mango:ArchiveProperty>
-						<mango:ArchiveProperty ifIsType="search"><h2>Search Results for <span class="green"><mango:ArchiveProperty title format="escapedHtml" /></h2></mango:ArchiveProperty>
+						<mango:ArchiveProperty ifIsType="search"><h2>Search results for <span class="green"><mango:ArchiveProperty title format="escapedHtml" /></h2></mango:ArchiveProperty>
 						<mango:ArchiveProperty ifIsType="author"><h2>Entries by '<mango:ArchiveProperty title />'</h2></mango:ArchiveProperty>
 						<mango:ArchiveProperty ifIsType="unknown"><h2>No archives</h2></mango:ArchiveProperty>
 
-						<mango:Posts count="2">
+						<mango:Posts count="10">
 							<mango:Post>
 								<h2><a href="<mango:PostProperty link />" rel="bookmark" title="Permanent Link to <mango:PostProperty title />"><mango:PostProperty title /></a></h2>
 								<p class="post-date"><mango:PostProperty date dateformat="mmmm dd, yyyy" /></p>
@@ -59,9 +56,7 @@
 				</div>
 			</div><!-- // row -->
 		</div> <!-- // container -->
-
 		<template:footer/>
-
 		<mango:Event name="beforeHtmlBodyEnd" />
 	</body>
 </html>

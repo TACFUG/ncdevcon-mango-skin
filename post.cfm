@@ -14,28 +14,26 @@
 					<div class="span12">
 
 
-<!--- entry --->
-<h2><mango:PostProperty title /></h2>
-<div class="post-meta well well-small">
-	<span class="meta-date">
-	<i class="icon-calendar"></i> <mango:PostProperty date dateformat="mmmm d, yyyy" />
-	</span>
-	<span class="meta-tag">
-	<i class="icon-tags"></i> <mango:Categories><mango:Category><a href="<mango:CategoryProperty link />" title="View all posts in  <mango:CategoryProperty title />" rel="category tag"><mango:CategoryProperty title /></a> <mango:Category ifCurrentIsNotLast>&middot; </mango:Category></mango:Category></mango:Categories>
-	</span>
-	<span class="meta-comment pull-right">
-	<i class="icon-comments"></i> <mango:PostProperty ifcommentsallowed><a href="<mango:PostProperty link />#comments" title="Comment on <mango:PostProperty title />"><mango:PostProperty ifCommentCountGT="0"><mango:PostProperty commentCount /> Comment<mango:PostProperty ifCommentCountGT="1">s</mango:PostProperty></mango:PostProperty><mango:PostProperty ifCommentCountLT="1">No Comments</mango:PostProperty></a></mango:PostProperty>
-	</span>
-</div>
+						<!--- entry --->
+						<h2><mango:PostProperty title /></h2>
+						<div class="post-meta well well-small">
+							<span class="meta-date">
+							<i class="icon-calendar"></i> <mango:PostProperty date dateformat="mmmm d, yyyy" />
+							</span>
+							<span class="meta-tag">
+							<i class="icon-tags"></i> <mango:Categories><mango:Category><a href="<mango:CategoryProperty link />" title="View all posts in  <mango:CategoryProperty title />" rel="category tag"><mango:CategoryProperty title /></a> <mango:Category ifCurrentIsNotLast>&middot; </mango:Category></mango:Category></mango:Categories>
+							</span>
+							<span class="meta-comment pull-right">
+							<i class="icon-comments"></i> <mango:PostProperty ifcommentsallowed><a href="<mango:PostProperty link />#comments" title="Comment on <mango:PostProperty title />"><mango:PostProperty ifCommentCountGT="0"><mango:PostProperty commentCount /> Comment<mango:PostProperty ifCommentCountGT="1">s</mango:PostProperty></mango:PostProperty><mango:PostProperty ifCommentCountLT="1">No Comments</mango:PostProperty></a></mango:PostProperty>
+							</span>
+						</div>
 
-<div class="entry"><mango:PostProperty body /></div>
+						<div class="entry"><mango:PostProperty body /></div>
 
-<div class="entry-footer entry">
-	<mango:Event name="beforePostContentEnd" template="post" mode="full" />
-</div>
-
-
-<!--- // entry --->
+						<div class="entry-footer entry">
+							<mango:Event name="beforePostContentEnd" template="post" mode="full" />
+						</div>
+						<!--- // entry --->
 
 
 

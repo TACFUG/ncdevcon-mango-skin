@@ -26,17 +26,18 @@ a {color: #2A5DB0;}
 /*header area*/
 .logo {height: 120px;}
 .logo img {padding: 10px 0}
-.masthead h1 {font-family: 'Lato', sans-serif; font-size: 300%; line-height: 20px;}
+.masthead h1 {font-family: 'Lato', sans-serif; font-size: 300%; line-height: 20px; color: #333;}
 .masthead h1 > a {color: #000;}
-.logobox {padding: 30px 80px;}
+.logobox {padding: 20px 80px;}
 
 
 .title {padding-top: 2px; padding-left: 50px;}
-.tagline {font-size: 100%; color: #666;}
+.tagline {font-size: 100%; color: #999;}
+.tagline b {color: #666;}
 .datelocation {color: #666; padding-top: 40px;}
 
 /*navigation*/
-.page-navigation {margin-top: 2em; border-top: 1px solid red;}
+.page-navigation {margin-top: 2em;}
 
 /*post meta block with date, comments and tags*/
 .post-meta {font-size: small;}

@@ -6,7 +6,6 @@
 <template:header/>
 <body>
 	<mango:Event name="beforeHtmlBodyStart" />
-		<!--- global page header / nav --->
 		<template:headernav/>
 			<!-- main content -->
 			<div class="container">
@@ -34,9 +33,7 @@
 					</ul>
 				</div>
 		</div>
-
 		<template:footer/>
-
 		<mango:Event name="beforeHtmlBodyEnd" />
 	</body>
 </html>

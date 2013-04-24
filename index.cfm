@@ -6,14 +6,11 @@
 <template:header/>
 <body>
 	<mango:Event name="beforeHtmlBodyStart" />
-		<!--- global page header / nav --->
 		<template:headernav/>
-			<!-- main content -->
 			<div class="container">
-			<!-- main content -->
 			<div class="row-fluid">
 				<div class="span8">
-					<mango:Posts count="2">
+					<mango:Posts count="10">
 						<mango:Post>
 						<!--- entry --->
 						<h2><a href="<mango:PostProperty link />" rel="bookmark" title="Permanent Link to <mango:PostProperty title />"><mango:PostProperty title /></a></h2>
@@ -42,7 +39,7 @@
 					</mango:Posts>
 
 					<!-- Previous / Next buttons -->
-					<mango:Archive pageSize="2">
+					<mango:Archive pageSize="10">
 						<div class="page-navigation">
 							<div class="previous"><mango:ArchiveProperty ifHasNextPage><a class="previous" href="<mango:ArchiveProperty link pageDifference="1" />"><i class="icon-chevron-left"></i> Previous Entries</a></mango:ArchiveProperty></div>
 							<div class="next"></div>
@@ -61,12 +58,9 @@
 						</mangox:PodGroup>
 					</ul>
 				</div>
-
 			</div>
 		</div>
-
 		<template:footer/>
-
 		<mango:Event name="beforeHtmlBodyEnd" />
 	</body>
 </html>

@@ -30,7 +30,7 @@
 								<img src="<mango:Blog skinurl />assets/img/slide-2.jpg" alt="Photo by NCDOTcommunication on Flickr">
 								<div class="container">
 									<div class="carousel-caption">
-										<h4>Raleigh, North Carolina</h4>
+										<h4>Location: Raleigh, North Carolina</h4>
 										<p>Businessweek selected Raleigh as its best place to live in the country. #1 Among Fastest-Growing Cities In The U.S. - Forbes, March 2013.  #5 Among America's New Tech Hot Spots - Forbes, January 2013.</p>
 									</div>
 								</div>
@@ -40,7 +40,7 @@
 								<img src="<mango:Blog skinurl />assets/img/slide-3.jpg" alt="Photo by NCDOTcommunication on Flickr">
 								<div class="container">
 									<div class="carousel-caption">
-										<h4>Venue</h4>
+										<h4>Venue: Centennial Campus</h4>
 										<p>NCDevCon is held at the College of Textiles located on the Centennial Campus of NC State University in Raleigh, North Carolina. Excellent wi-fi, classroom seating, nice outdoor areas and lots of room to network in the halls.</p>
 									</div>
 								</div>
@@ -60,38 +60,37 @@
 						<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
 					</div><!-- // carousel -->
 
-		<div class="container marketing">
-			<div class="row-fluid">
-				<div class="span4">
-					<img class="img-circle" data-src="holder.js/140x140">
-					<h3>About</h3>
-					<p>The NCDevCon Conference is held annually on the Centennial Campus of NC State University in Raleigh, North Carolina and covers a wide variety of web development and design topics including Web / HTML5 / CSS, Mobile, Javascript / jQuery and ColdFusion.</p>
-					<ul class="unstyled">
-						<li><i class="icon-calendar"></i> When: September 28-29, 2013</li>
-						<li><i class="icon-plane"></i> Where: Raleigh, North Carolina</li>
-						<li><i class="icon-money"></i> How much: $200</li>
-						<li><i class="icon-lightbulb"></i> Why: Network, learn, feed your brain.</li>
-					</ul>
-				</div>
+					<div class="container marketing">
+						<div class="row-fluid">
+							<div class="span4">
+								<img class="img-circle" data-src="holder.js/140x140">
+								<h3>About</h3>
+								<p>The NCDevCon Conference is held annually on the Centennial Campus of NC State University in Raleigh, North Carolina and covers a wide variety of web development and design topics including Web / HTML5 / CSS, Mobile, Javascript / jQuery and ColdFusion.</p>
+								<ul class="unstyled">
+									<li><i class="text-error icon-calendar"></i> When: September 28-29, 2013</li>
+									<li><i class="text-info icon-plane"></i> Where: Raleigh, North Carolina</li>
+									<li><i class="text-success icon-money"></i> How much: $200</li>
+									<li><i class="text-warning icon-lightbulb"></i> Why: Network, learn, feed your brain.</li>
+								</ul>
+							</div>
 
-				<div class="span4">
-					<h3>Stay In Touch</h3>
-					<p>Join our mailing list and/or follow us on Twitter to keep up to date on NCDevCon news and announcements.</p>
-					<p><i class="icon-twitter"></i> Follow @ncdevcon</p>
+							<div class="span4">
+								<h3>Stay In Touch</h3>
+								<p>Join our mailing list and/or follow us on Twitter to keep up to date on NCDevCon news and announcements.</p>
+								<p><i class="text-info icon-twitter"></i> Follow <a href="https://twitter.com/ncdevcon" title="Follow us at @ncdevcon">@ncdevcon</a></p>
 
-					<!-- Begin MailChimp Signup Form -->
-					<div>
-						<form action="http://ncdevcon.us5.list-manage.com/subscribe/post?u=decde6098798f0901110dc72f&amp;id=f935cd82a9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline" target="_blank" novalidate>
-							<input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Email address" required>
-							<button type="submit" class="btn">Join</button>
-						</form>
-					</div><!-- // End mc_embed_signup-->
+								<!-- Begin MailChimp Signup Form -->
+								<div>
+									<form action="http://ncdevcon.us5.list-manage.com/subscribe/post?u=decde6098798f0901110dc72f&amp;id=f935cd82a9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline" target="_blank" novalidate>
+										<input type="email" value="" class="input-large" name="EMAIL" id="mce-EMAIL" placeholder="Email address" required>
+										<button type="submit" class="btn btn-inverse">Join</button>
+									</form>
+								</div><!-- // End mc_embed_signup-->
 
-				</div>
-			</div><!-- // row -->
-
-				</div>
-		</div>
+							</div>
+						</div><!-- // row -->
+					</div><!-- // marketing -->
+				</div> <!-- // span8 -->
 
 				<!-- sidebar -->
 				<div class="span4">
@@ -105,9 +104,7 @@
 					</ul>
 				</div>
 
-
-		<template:footer/>
-
+			<template:footer/>
 		<mango:Event name="beforeHtmlBodyEnd" />
 	</body>
 </html>

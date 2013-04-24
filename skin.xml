@@ -6,8 +6,8 @@
 	<authorUrl>http://www.thecrumb.com.com</authorUrl>
 	<designAuthor>Jim Priest</designAuthor>
 	<designAuthorUrl>http://www.thecrumb.com</designAuthorUrl>
-	<thumbnail>img/ncdevcon-bootstrap.jpg</thumbnail>
-	<preview>img/ncdevcon-bootstrap.jpg</preview>
+	<thumbnail>assets/img/skin_thumbnail.png</thumbnail>
+	<preview>assets/img/skin_thumbnail.png</preview>
 	<requiresVersion match="greaterOrEqual">1.7</requiresVersion>
 	<adminEditorCss></adminEditorCss>
 	<license>Creative Commons Attribution-ShareAlike 2.5</license>
