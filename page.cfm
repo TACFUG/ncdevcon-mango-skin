@@ -16,7 +16,6 @@
 							<mango:PageProperty body />
 
 							<div class="post-footer">
-								<hr>
 								<mango:Event name="beforePageContentEnd" template="page" mode="full" />
 							</div>
 

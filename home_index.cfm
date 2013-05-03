@@ -14,9 +14,22 @@
 			<div class="row-fluid">
 				<div class="span8">
 					<!-- carousel -->
+
 					<div id="myCarousel" class="carousel slide">
 						<div class="carousel-inner">
+
 							<div class="item active">
+								<a href="http://bit.ly/135J9Od" target="_blank" title="Submit your presentation today!"><img src="<mango:Blog skinurl />assets/img/slide-5.jpg" alt="Call for speakers - image by Sunfox on Flickr"></a>
+								<div class="container">
+									<div class="carousel-caption">
+										<h4>2013 - Call For Speakers</h4>
+										<p>We've opened the call for speakers. Want to talk about HTML5, Mobile, CSS, Javascript or ColdFusion?  Submit your presentation(s) today!
+										<a href="http://bit.ly/135J9Od" class="btn btn-mini btn-success">Learn More</a></p>
+									</div>
+								</div>
+							</div><!-- // item -->
+
+							<div class="item">
 								<img src="<mango:Blog skinurl />assets/img/slide-1.jpg" alt="Content">
 								<div class="container">
 									<div class="carousel-caption">
@@ -51,7 +64,7 @@
 								<div class="container">
 									<div class="carousel-caption">
 										<h4>Sponsor</h4>
-										<p>Sponsoring NCDevCon is a great way to reach developers in the heart of the Research Triangle Park, home to IBM, Cisco, Lenovo, SAS, RTI, EPA, RedHat, Quintiles, Qualcomm, Cree and other leading companies. <span class="label">Learn More</span></p>
+										<p>Sponsoring NCDevCon is a great way to reach developers in the heart of the Research Triangle Park, home to IBM, Cisco, Lenovo, SAS, RTI, EPA, RedHat, Quintiles, Qualcomm, Cree and other leading companies. <a href="http://ncdevcon.com/page.cfm/sponsors" title="Learn more about sponsoring NCDevCon" class="btn btn-mini btn-success">Learn More</a></p>
 									</div>
 								</div>
 							</div><!-- // item -->
@@ -63,7 +76,6 @@
 					<div class="container marketing">
 						<div class="row-fluid">
 							<div class="span4">
-								<img class="img-circle" data-src="holder.js/140x140">
 								<h3>About</h3>
 								<p>The NCDevCon Conference is held annually on the Centennial Campus of NC State University in Raleigh, North Carolina and covers a wide variety of web development and design topics including Web / HTML5 / CSS, Mobile, Javascript / jQuery and ColdFusion.</p>
 								<ul class="unstyled">
@@ -103,6 +115,8 @@
 						</mangox:PodGroup>
 					</ul>
 				</div>
+			</div><!-- // row -->
+		</div> <!-- // container -->
 
 			<template:footer/>
 		<mango:Event name="beforeHtmlBodyEnd" />

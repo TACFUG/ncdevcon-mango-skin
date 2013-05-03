@@ -6,6 +6,8 @@
 </cfsilent>
 <cfif thisTag.executionMode EQ "start">
 
+
+<div class="clear"></div>
 <hr>
 <div class="footer">
 <mango:Event name="afterFooterStart" />
