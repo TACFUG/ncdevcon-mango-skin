@@ -18,6 +18,7 @@
 					<div id="myCarousel" class="carousel slide">
 						<div class="carousel-inner">
 
+<!--- CALL FOR SPEAKERS ==========================================
 							<div class="item active">
 								<a href="http://bit.ly/135J9Od" target="_blank" title="Submit your presentation today!"><img src="<mango:Blog skinurl />assets/img/slide-5.jpg" alt="Call for speakers - image by Sunfox on Flickr"></a>
 								<div class="container">
@@ -28,8 +29,9 @@
 									</div>
 								</div>
 							</div><!-- // item -->
+ ========================================================== --->
 
-							<div class="item">
+							<div class="item active">
 								<img src="<mango:Blog skinurl />assets/img/slide-1.jpg" alt="Content">
 								<div class="container">
 									<div class="carousel-caption">
@@ -79,7 +81,7 @@
 								<h3>About</h3>
 								<p>The NCDevCon Conference is held annually on the Centennial Campus of NC State University in Raleigh, North Carolina and covers a wide variety of web development and design topics including Web / HTML5 / CSS, Mobile, Javascript / jQuery and ColdFusion.</p>
 								<ul class="unstyled">
-									<li><i class="text-error icon-calendar"></i> When: September 28-29, 2013</li>
+									<li><i class="text-error icon-calendar"></i> When: September 21-22, 2013</li>
 									<li><i class="text-info icon-plane"></i> Where: Raleigh, North Carolina</li>
 									<li><i class="text-success icon-money"></i> How much: $200</li>
 									<li><i class="text-warning icon-lightbulb"></i> Why: Network, learn, feed your brain.</li>
@@ -120,5 +122,12 @@
 
 			<template:footer/>
 		<mango:Event name="beforeHtmlBodyEnd" />
+
+		<script type="text/javascript">
+			$('#myCarousel').carousel({
+				interval: 5000
+			})
+		</script>
+
 	</body>
 </html>

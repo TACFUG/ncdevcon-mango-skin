@@ -11,7 +11,7 @@
 			<div class="container">
 				<!-- main content -->
 				<div class="row-fluid">
-					<div class="span12">
+					<div class="span8">
 
 
 						<!--- entry --->
@@ -21,10 +21,10 @@
 							<i class="icon-calendar"></i> <mango:PostProperty date dateformat="mmmm d, yyyy" />
 							</span>
 							<span class="meta-tag">
-							<i class="icon-tags"></i> <mango:Categories><mango:Category><a href="<mango:CategoryProperty link />" title="View all posts in  <mango:CategoryProperty title />" rel="category tag"><mango:CategoryProperty title /></a> <mango:Category ifCurrentIsNotLast>&middot; </mango:Category></mango:Category></mango:Categories>
+							<mango:Categories><i class="icon-tags"></i> <mango:Category><a href="<mango:CategoryProperty link />" title="View all posts in  <mango:CategoryProperty title />" rel="category tag"><mango:CategoryProperty title /></a> <mango:Category ifCurrentIsNotLast>&middot; </mango:Category></mango:Category></mango:Categories>
 							</span>
 							<span class="meta-comment pull-right">
-							<i class="icon-comments"></i> <mango:PostProperty ifcommentsallowed><a href="<mango:PostProperty link />#comments" title="Comment on <mango:PostProperty title />"><mango:PostProperty ifCommentCountGT="0"><mango:PostProperty commentCount /> Comment<mango:PostProperty ifCommentCountGT="1">s</mango:PostProperty></mango:PostProperty><mango:PostProperty ifCommentCountLT="1">No Comments</mango:PostProperty></a></mango:PostProperty>
+							<mango:PostProperty ifcommentsallowed><i class="icon-comments"></i> <a href="<mango:PostProperty link />#comments" title="Comment on <mango:PostProperty title />"><mango:PostProperty ifCommentCountGT="0"><mango:PostProperty commentCount /> Comment<mango:PostProperty ifCommentCountGT="1">s</mango:PostProperty></mango:PostProperty><mango:PostProperty ifCommentCountLT="1">No Comments</mango:PostProperty></a></mango:PostProperty>
 							</span>
 						</div>
 
@@ -35,34 +35,57 @@
 						</div>
 						<!--- // entry --->
 
+<br>
+<h3>Ready to Register for NCDevCon 2013?</h3>
+<p><a href="http://www.eventbrite.com/event/3327772457?ref=ebtnebregn" target="_blank"><img style="padding: 10px 35px;" src="http://www.eventbrite.com/custombutton?eid=3327772457" alt="Eventbrite - NCDevCon 2013 - North Carolina's Premier Web Conference" /></a></p>
+<br>
 
 
 <mango:PostProperty ifcommentsallowed ifCommentCountGT="0">
-<h3 class="comments_headers"><mango:PostProperty commentCount /> response<mango:PostProperty ifCommentCountGT="1">s</mango:PostProperty><mango:PostProperty ifCommentCountLT="1">s</mango:PostProperty><mango:PostProperty ifcommentsallowed> so far &darr;</mango:PostProperty></h3>
+<h4 class="comments_headers"><i class="icon-comments"></i> <mango:PostProperty commentCount /> response<mango:PostProperty ifCommentCountGT="1">s</mango:PostProperty><mango:PostProperty ifCommentCountLT="1">s</mango:PostProperty><mango:PostProperty ifcommentsallowed> so far</mango:PostProperty></h4>
 </mango:PostProperty>
 <mango:PostProperty ifcommentsallowed ifCommentCountLT="1">
 <!-- If comments are open, but there are no comments. -->
 <div class="entry">
-<p>There are no comments yet...Kick things off by filling out the form below.</p>
+<p><i class="icon-comments"></i> There are no comments yet...Kick things off by filling out the form below.</p>
 </div>
 </mango:PostProperty>
 
 <mango:PostProperty ifNotCommentsAllowed ifCommentCountGT="0">
 <div class="comment-number">
-<h3 class="comments_headers"><mango:PostProperty commentCount /> response<mango:PostProperty ifCommentCountGT="1">s</mango:PostProperty></h3><p> (comments are now closed)	</p>
+<h4 class="comments_headers"><i class="icon-comments"></i> <mango:PostProperty commentCount /> response<mango:PostProperty ifCommentCountGT="1">s</mango:PostProperty></h4>
+<p>(comments are now closed)</p>
 </div><!--end comment-number-->
 </mango:PostProperty>
-<mango:Comments>
-<mango:Comment>
-<blockquote<mango:CommentProperty ifIsAuthor> class="author"</mango:CommentProperty>>
-<p><strong><mango:CommentProperty ifhasurl><a href='<mango:CommentProperty url />' rel='external nofollow'></mango:CommentProperty><mango:CommentProperty name /><mango:CommentProperty ifhasurl></a></mango:CommentProperty> </strong> - <mango:CommentProperty date dateformat="mmm d, yyyy" /> at <mango:CommentProperty time /><p>
-<mango:CommentProperty content /></blockquote>
-</mango:Comment>
-</mango:Comments>
+
+		<ul id="comment_list" class="unstyled">
+			<mango:Comments>
+			<mango:Comment>
+			<li class="comment <mango:CommentProperty ifIsAuthor> highlighted</mango:CommentProperty>" id="comment-<mango:CommentProperty id />">
+				<span class="comment_meta">
+					<!--- <span class="comment_num"><a href="#comment-<mango:CommentProperty id />" title="Permalink to this comment"><mango:CommentProperty currentCount /></a></span> --->
+						<strong><mango:CommentProperty ifhasurl><a href='<mango:CommentProperty url />' rel='external nofollow'></mango:CommentProperty><mango:CommentProperty name /><mango:CommentProperty ifhasurl></a></mango:CommentProperty> </strong>
+						<span class="comment_time">// <mango:CommentProperty date dateformat="mmm d, yyyy" /> at <mango:CommentProperty time /></span>
+				</span>
+				<div class="entry">
+					 <mango:CommentProperty content />
+				</div>
+				<br>
+			</li>
+			</mango:Comment>
+			</mango:Comments>
+		</ul>
+		
+
+
+
+
+
+
 
 <mango:PostProperty ifcommentsallowed>
 <!-- Comment Form -->
-<h3 id="respond" class="comments_headers">Leave a Comment</h3>
+<h4 id="respond" class="comments_headers">Leave a Comment</h4>
 <mango:Message ifMessageExists type="comment" status="error">
 <p class="error">There was a problem: <mango:Message text /></p>
 </mango:Message>
@@ -76,27 +99,28 @@
 <mango:AuthenticatedAuthor ifNotIsLoggedIn>
 <div>
 <label for="author">Name</label>
-<input id="author" type="text" name="comment_name" value="<mango:RequestVar name='comment_name' />" />
+<input id="author" class="input-xlarge" type="text" name="comment_name" value="<mango:RequestVar name='comment_name' />" />
 </div>
 <div>
 <label for="email">Mail (it will not be displayed)</label>
-<input type="text" id="email" name="comment_email" value="<mango:RequestVar name='comment_email' />" />
+<input type="text" class="input-xlarge"  id="email" name="comment_email" value="<mango:RequestVar name='comment_email' />" />
 </div>
 <div>
 <label for="url">Website</label>
-<input type="text" id="url" name="comment_website" size="30" value="<mango:RequestVar name='comment_website' />"  />
+<input type="text" class="input-xlarge"  id="url" name="comment_website" size="30" value="<mango:RequestVar name='comment_website' />"  />
 </div>
 </mango:AuthenticatedAuthor>
 <div>
 <label for="comment_content">Your comments</label>
-<textarea id="comment_content" name="comment_content" rows="7"><mango:RequestVar name="comment_content" /></textarea>
+<textarea id="comment_content" class="input-xxlarge"  name="comment_content" rows="5"><mango:RequestVar name="comment_content" /></textarea>
 </div>
 <div>
-<label for="subscribe">Subscribe to this comment thread</label>
-<input type="checkbox" id="subscribe" name="comment_subscribe" value="1" />
+<label class="checkbox">
+	<input type="checkbox" id="subscribe" name="comment_subscribe" value="1" /> Subscribe to this comment thread
+</label>
 </div>
 <div>
-<input name="submit" class="button" type="submit" id="submit" value="Submit" />
+<input name="submit" class="btn btn-primary" type="submit" id="submit" value="Submit" />
 </div>
 <!--- Hidden fields --->
 <input type="hidden" name="action" value="addComment" />
@@ -114,10 +138,10 @@ You are logged in as <mango:AuthorProperty name />
 </mango:PostProperty>
 </div><!-- // end row -->
 
+<!-- sidebar --> <div class="span4"> <ul class="sidebar_list"> <mangox:PodGroup locationId="sidebar" template="index"> <mangox:TemplatePod id="blog-description" title="WTF"> <p><mango:Blog description descriptionParagraphFormat /></p> </mangox:TemplatePod> <template:sidebar /> </mangox:PodGroup> </ul> </div>
+</div><!-- // container -->
 
-
-					</div><!-- // container -->
-				<template:footer/>
+	<template:footer/>
 
 		<mango:Event name="beforeHtmlBodyEnd" />
 			</mango:Post>

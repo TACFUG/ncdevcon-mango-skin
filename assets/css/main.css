@@ -40,7 +40,7 @@ a {color: #2A5DB0;}
 .page-navigation {margin-top: 2em;}
 
 /*post meta block with date, comments and tags*/
-.post-meta {font-size: small;}
+.post-meta {font-size: 95%;}
 .meta-date {padding-right: 1em;}
 
 /*carousel tweaks*/
